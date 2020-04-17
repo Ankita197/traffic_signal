@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvTrafficSignal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Traffic Signal"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/ivSetting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/ivSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/setting_icon"
+          app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="20dp"/>
+
+    <GridLayout
+        android:id="@+id/gridSignal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="7"
+        android:rowCount="7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTrafficSignal"
+        tools:context=".MainActivity">
+
+
+        <Button
+            android:id="@+id/btnAmbTop"
+            android:layout_width="33dp"
+            android:layout_height="40dp"
+            android:layout_columnSpan="7"
+            android:layout_gravity="center"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/button_shape"
+            android:text="Amb"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btnA"
+            android:layout_width="33dp"
+            android:layout_height="40dp"
+            android:layout_columnSpan="7"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_shape"
+            android:text="A"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tvTop"
+            android:layout_columnSpan="7"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="10" />
+
+        <Button
+            android:id="@+id/btnAmbLeft"
+            android:layout_width="33dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_shape"
+            android:text="Amb"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnB"
+            android:layout_width="33dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_shape"
+            android:text="B"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnAmbTop" />
+
+        <TextView
+            android:id="@+id/tvLeft"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="10" />
+
+        <TextView
+            android:id="@+id/tvRight"
+            android:layout_columnSpan="2"
+            android:layout_gravity="end"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="10" />
+
+        <Button
+            android:id="@+id/btnC"
+            android:layout_width="33dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_shape"
+            android:text="C"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btnAmbRight"
+            android:layout_width="33dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/button_shape"
+            android:text="Amb"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tvBottom"
+            android:layout_columnSpan="7"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="10" />
+
+
+        <Button
+            android:id="@+id/btnD"
+            android:layout_width="33dp"
+            android:layout_height="40dp"
+            android:layout_columnSpan="7"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_shape"
+            android:text="D"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btnAmbBottom"
+            android:layout_width="33dp"
+            android:layout_height="40dp"
+            android:layout_columnSpan="7"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_shape"
+            android:text="Amb"
+            android:textSize="10sp" />
+
+
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
